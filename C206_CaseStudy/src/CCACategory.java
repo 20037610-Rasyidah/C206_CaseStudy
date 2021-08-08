@@ -1,5 +1,12 @@
 
 public class CCACategory{
-	private String name;
+	private String category;
 	
+	public CCACategory(String name) {
+		this.category = category;
+	}
+	
+	public String getCategory() {
+		return category;
+	}
 }
