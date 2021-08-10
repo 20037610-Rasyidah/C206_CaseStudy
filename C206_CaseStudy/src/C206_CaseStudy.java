@@ -417,6 +417,19 @@ private static int len(String login) {
 				      System.out.println("Invalid detail index");
 				    }
 				  }
+			  ///
+			  public static void deleteccaDetails(CCADetails[]detailsList) {
+
+				   	C206_CaseStudy.deleteccaDetails(detailsList);
+
+				    int deleteccaDetails= Helper.readInt("Enter cca detail to delete > ");
+				    if (deleteccaDetails > 0 && deleteccaDetails <= detailsList.length && detailsList[deleteccaDetails] != null) {
+				      detailsList[deleteccaDetails] = null;
+				      System.out.println("detail deleted!");
+				    } else {
+				      System.out.println("Invalid detail index");
+				    }
+				  }
 		
 
 
