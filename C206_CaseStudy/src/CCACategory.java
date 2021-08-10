@@ -15,5 +15,4 @@ public class CCACategory{
 		CCAname = cCAname;
 	}
 	
-	
 }

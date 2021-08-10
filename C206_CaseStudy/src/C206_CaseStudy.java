@@ -417,6 +417,8 @@ private static int len(String login) {
 				      System.out.println("Invalid detail index");
 				    }
 				  }
+		
+
 
 	}
 		  
