@@ -28,120 +28,185 @@ public class C206_CaseStudy {
     StudentList.add(new Student("1817", "Alice","Primary 6", "Mrs.Mary"));
     StudentList.add(new Student("1816", "Anne","Primary 4", "Mrs.stacy"));
     
+    
+    C206_CaseStudy.userLogin();
+    
+    
 
-    int option = 0;
+//    int option = 0;
+//
+//    while (option != 5) {
+//
+//      C206_CaseStudy.userLogin();
+//      option = Helper.readInt("Enter an option > ");
+//      
+//      
+// 
+//      if (option == 1) {
+//        // View all items
+//        C206_CaseStudy.viewCCADetails(CCADetailsList);
+//        C206_CaseStudy.viewCCACategory(CCACatList);
+//        C206_CaseStudy.viewParent(ParentList);
+//        C206_CaseStudy.viewStudent(StudentList);
+//
+//
+//      } else if (option == 2) {
+//        // Add a new item
+//        C206_CaseStudy.setHeader("ADD RECORDS");      
+//        System.out.println("1. CCA Details");
+//        System.out.println("2. CCA Category");
+//        System.out.println("3. Parent");
+//        System.out.println("4. Student");
+//        
+//        int itemType = Helper.readInt("Enter option to select item type > ");
+//
+//        if (itemType == 1) {
+//          // ============================ ADD CCADETAILS ==================================
+//        	CCADetails ccaCategory = addCCADetails();
+//        	C206_CaseStudy.addCCADetails(CCADetailsList,ccaCategory);
+//
+//        } else if (itemType == 2) {
+//        	// ============================ ADD CCACATEGORY ==================================
+//        	CCACategory ccaCategory  = addCCACategory();
+//        	C206_CaseStudy.addCCACategory(CCACatList, ccaCategory);
+//
+//        } else if (itemType == 3) {
+//        	// ============================ ADD PARENT ==================================
+//        	 Parent parentDetails = addParentDetails();
+//             C206_CaseStudy.addParentDetails(ParentList, parentDetails);
+//        }else if (itemType == 4) {
+//        	// ============================ ADD STUDENT ==================================
+//        	 Student StudentDetails = addStudentDetails();
+//             C206_CaseStudy.addStudentDetails(StudentList, StudentDetails);
+//        }
+//        
+//        else {
+//          System.out.println("Invalid type");
+//        }
+//
+//      } else if (option == 3) {
+//        // Loan item
+//        C206_CaseStudy.setHeader("LOAN");      
+//        C206_CaseStudy.setHeader("ITEM TYPES");
+//        System.out.println("1. Camcorder");
+//        System.out.println("2. Chromebook");
+//        
+//        int itemType = Helper.readInt("Enter option to select item type > ");
+//
+//        if (itemType == 1) {
+//          // Loan camcorder
+//          C206_CaseStudy.loanCamcorder(camcorderList);
+//        } else if (itemType == 2) {
+//          // Loan Chromebook
+//          C206_CaseStudy.loanChromebook(chromebookList);
+//        } else {
+//          System.out.println("Invalid type");
+//        }
+//
+//      } else if (option == 4) {
+//        // Return item
+//        C206_CaseStudy.setHeader("RETURN");        
+//        C206_CaseStudy.setHeader("ITEM TYPES");
+//        System.out.println("1. Camcorder");
+//        System.out.println("2. Chromebook");
+//        
+//        int itemType = Helper.readInt("Enter option to select item type > ");
+//        if (itemType == 1) {
+//          // Return camcorder
+//          C206_CaseStudy.returnCamcorder(camcorderList);
+//        } else if (itemType == 2) {
+//          // Return Chromebook
+//          C206_CaseStudy.returnChromebook(chromebookList);
+//        } else {
+//          System.out.println("Invalid type");
+//        }
+//
+//      } else if (option == 5) {
+//        System.out.println("Bye!");
+//      } else {
+//        System.out.println("Invalid option");
+//      }
 
-    while (option != 5) {
-
-      C206_CaseStudy.menu();
-      option = Helper.readInt("Enter an option > ");
-
-      if (option == 1) {
-        // View all items
-        C206_CaseStudy.viewCCADetails(CCADetailsList);
-        C206_CaseStudy.viewCCACategory(CCACatList);
-        C206_CaseStudy.viewParent(ParentList);
-        C206_CaseStudy.viewStudent(StudentList);
-
-
-      } else if (option == 2) {
-        // Add a new item
-        C206_CaseStudy.setHeader("ADD RECORDS");      
-        System.out.println("1. CCA Details");
-        System.out.println("2. CCA Category");
-        System.out.println("3. Parent");
-        System.out.println("4. Student");
-        
-        int itemType = Helper.readInt("Enter option to select item type > ");
-
-        if (itemType == 1) {
-          // ============================ ADD CCADETAILS ==================================
-        	CCADetails ccaCategory = addCCADetails();
-        	C206_CaseStudy.addCCADetails(CCADetailsList,ccaCategory);
-
-        } else if (itemType == 2) {
-        	// ============================ ADD CCACATEGORY ==================================
-        	CCACategory ccaCategory  = addCCACategory();
-        	C206_CaseStudy.addCCACategory(CCACatList, ccaCategory);
-
-        } else if (itemType == 3) {
-        	// ============================ ADD PARENT ==================================
-        	 Parent parentDetails = addParentDetails();
-             C206_CaseStudy.addParentDetails(ParentList, parentDetails);
-        }else if (itemType == 4) {
-        	// ============================ ADD STUDENT ==================================
-        	 Student StudentDetails = addStudentDetails();
-             C206_CaseStudy.addStudentDetails(StudentList, StudentDetails);
-        }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        else {
-          System.out.println("Invalid type");
-        }
-
-      } else if (option == 3) {
-        // Loan item
-        C206_CaseStudy.setHeader("LOAN");      
-        C206_CaseStudy.setHeader("ITEM TYPES");
-        System.out.println("1. Camcorder");
-        System.out.println("2. Chromebook");
-        
-        int itemType = Helper.readInt("Enter option to select item type > ");
-
-        if (itemType == 1) {
-          // Loan camcorder
-          C206_CaseStudy.loanCamcorder(camcorderList);
-        } else if (itemType == 2) {
-          // Loan Chromebook
-          C206_CaseStudy.loanChromebook(chromebookList);
-        } else {
-          System.out.println("Invalid type");
-        }
-
-      } else if (option == 4) {
-        // Return item
-        C206_CaseStudy.setHeader("RETURN");        
-        C206_CaseStudy.setHeader("ITEM TYPES");
-        System.out.println("1. Camcorder");
-        System.out.println("2. Chromebook");
-        
-        int itemType = Helper.readInt("Enter option to select item type > ");
-        if (itemType == 1) {
-          // Return camcorder
-          C206_CaseStudy.returnCamcorder(camcorderList);
-        } else if (itemType == 2) {
-          // Return Chromebook
-          C206_CaseStudy.returnChromebook(chromebookList);
-        } else {
-          System.out.println("Invalid type");
-        }
-
-      } else if (option == 5) {
-        System.out.println("Bye!");
-      } else {
-        System.out.println("Invalid option");
-      }
-
-    }
+//    }
+    
+    
 
   }
 
-  public static void menu() {
-    C206_CaseStudy.setHeader("RESOURCE CENTRE APP");
-    System.out.println("1. Display Inventory");
-    System.out.println("2. Add item");
-    System.out.println("3. Loan item");
-    System.out.println("4. Return item");
-    System.out.println("5. Quit");
+  public static void userLogin() {
+    C206_CaseStudy.setHeader("LOGIN PAGE");
+    String login = ("Enter your email or id");
     Helper.line(80, "-");
+    
+    if(login.contains("staff@gmail.com")) {
+    	int option = 0;   
+    	C206_CaseStudy.staffMenu();
+    	option =Helper.readInt("Enter your option");
+    	
+      while (option!= 11) {
+    	  
+      if(option == 1) {
+    	  C206_CaseStudy.addCCADetails();
+      }
+      else if(option == 2) {
+    	  C206_CaseStudy.deleteccaDetails(CCADetails [] detailsList);
+      }else if(option == 3) {
+    	  C206_CaseStudy.addCCACategory();
+      }else if (option == 4) {
+    	  C206_CaseStudy.deleteccaCategory(categoryList);
+      }else if(option == 5) {
+    	  C206_CaseStudy.addParentDetails();
+      }else if (option == 6) {
+    	  C206_CaseStudy.deleteParent(ParentList);
+      }else if(option == 7) {
+    	  C206_CaseStudy.viewParent(ParentList);
+      }else if(option == 8) {
+    	  C206_CaseStudy.addStudentDetails()
+      }else if(option == 9) {
+    	  C206_CaseStudy.deleteStudent(StudentList);
+      }else if(option == 10) {
+    	  C206_CaseStudy.viewStudent(StudentList);
+      } 
+      }
+    }
+    else if (len(login) ==5){
+    	
+    }
+    else {
+    	
+    
+    }
 }
+ public static void staffMenu() {
+     C206_CaseStudy.setHeader("Staff Optiion");      
+     System.out.println("1. Add CCA Details");
+     System.out.println("2. Delete CCA Details");
+     
+     System.out.println("3. Add CCA Category");
+     System.out.println("4. Delete CCA Category");
+     
+     System.out.println("5. Add Parent");
+     System.out.println("6. Delete Parent");
+     System.out.println("7. View Parent");
+     
+     System.out.println("8. Add Student");
+     System.out.println("9. Delete Student");
+     System.out.println("10. View Student");
+ }
+private static int len(String login) {
+	// TODO Auto-generated method stub
+	return 0;
+}
+
+//  public static void userLogin() {
+//	    C206_CaseStudy.setHeader("LOGIN PAGE");
+//	    System.out.println("1. Parent");
+//	    System.out.println("2. Student");
+//	    System.out.println("3. Staff");
+//	    System.out.println("4. Return item");
+//	    System.out.println("5. Quit");
+//	    Helper.line(80, "-");
+//	}
   public static void setHeader(String header) {
 		Helper.line(80, "-");
 		System.out.println(header);
