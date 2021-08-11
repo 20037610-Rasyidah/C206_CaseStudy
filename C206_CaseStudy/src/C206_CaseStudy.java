@@ -28,6 +28,10 @@ public class C206_CaseStudy {
     StudentList.add(new Student("1817", "Alice","Primary 6", "Mrs.Mary"));
     StudentList.add(new Student("1816", "Anne","Primary 4", "Mrs.stacy"));
     
+//    StudentList.add(new Student("1819", "jack","Primary 3", "Mr.Raju"));
+//    StudentList.add(new Student("1818", "Ben","Primary 5", "Mr.Ali"));
+//    StudentList.add(new Student("1817", "Alice","Primary 6", "Mrs.Mary"));
+//    StudentList.add(new Student("1816", "Anne","Primary 4", "Mrs.stacy"));
     
     C206_CaseStudy.userLogin();
     
