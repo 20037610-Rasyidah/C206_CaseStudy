@@ -4,11 +4,11 @@ public class CCADetails  {
 	private String description;
 	private int size;
 	private String day;
-	private int time;
+	private String time;
 	private String venue;
 	private String ICname;
 	
-	public CCADetails(String title, String description, int size, String day, int time, String venue,
+	public CCADetails(String title, String description, int size, String day, String time, String venue,
 			String iCname) {
 		super();
 		this.title = title;
@@ -44,7 +44,7 @@ public class CCADetails  {
 		return day;
 	}
 
-	public int getTime() {
+	public String getTime() {
 		return time;
 	}
 

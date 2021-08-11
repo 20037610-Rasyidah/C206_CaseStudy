@@ -11,12 +11,4 @@ public class CCACategory{
 		return CCAname;
 	}
 
-	public void setCCAname(String cCAname) {
-		CCAname = cCAname;
-	}
-	//
-	public void setCCAname(String cCAname) {
-		CCAname = cCAname;
-	}
-	//
 }

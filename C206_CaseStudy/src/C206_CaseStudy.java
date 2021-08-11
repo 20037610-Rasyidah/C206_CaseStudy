@@ -8,10 +8,10 @@ public class C206_CaseStudy {
     ArrayList<Parent> ParentList = new ArrayList<Parent>();
     ArrayList<Student> StudentList = new ArrayList<Student>();
 
-    CCADetailsList.add(new CCADetails("Soccer", "Sports activity",20,"Monday",1600,"Soccer Field","Mr.Bala"));
-    CCADetailsList.add(new CCADetails("aesthetics Arts", "indoor activity",20,"Tuesday",1500,"Art room","Mr.Mala"));
-    CCADetailsList.add(new CCADetails("Modern Dance", "Outdoor activity",20,"Wednesday",1300,"Dance room","Mr.vala"));
-    CCADetailsList.add(new CCADetails("Photography club ", "Outdoor activity",20,"Thursday",1300,"Photography room","Mr.Pala"));
+    CCADetailsList.add(new CCADetails("Soccer", "Sports activity",20,"Monday","4:00PM- 6:00PM","Soccer Field","Mr.Bala"));
+    CCADetailsList.add(new CCADetails("aesthetics Arts", "indoor activity",20,"Tuesday","3:00PM- 4:00PM","Art room","Mr.Mala"));
+    CCADetailsList.add(new CCADetails("Modern Dance", "Outdoor activity",20,"Wednesday","4:00PM- 6:00PM","Dance room","Mr.vala"));
+    CCADetailsList.add(new CCADetails("Photography club ", "Outdoor activity",20,"Thursday","3:00PM- 4:00PM","Photography room","Mr.Pala"));
     
     CCACatList.add(new CCACategory("Sports"));
     CCACatList.add(new CCACategory("Performing Arts"));
@@ -23,164 +23,110 @@ public class C206_CaseStudy {
     ParentList.add(new Parent("1817", "Alice","Primary 6", "Mrs.Mary","Lolo","Lolo@gamil.com", 90684639));
     ParentList.add(new Parent("1816", "Anne","Primary 4", "Mrs.stacy","Lele","Lele@gamil.com", 96375648));
     
-    StudentList.add(new Student("1819", "jack","Primary 3", "Mr.Raju"));
-    StudentList.add(new Student("1818", "Ben","Primary 5", "Mr.Ali"));
-    StudentList.add(new Student("1817", "Alice","Primary 6", "Mrs.Mary"));
-    StudentList.add(new Student("1816", "Anne","Primary 4", "Mrs.stacy"));
-    
 //    StudentList.add(new Student("1819", "jack","Primary 3", "Mr.Raju"));
 //    StudentList.add(new Student("1818", "Ben","Primary 5", "Mr.Ali"));
 //    StudentList.add(new Student("1817", "Alice","Primary 6", "Mrs.Mary"));
 //    StudentList.add(new Student("1816", "Anne","Primary 4", "Mrs.stacy"));
+//    StudentList.add(new Student("1816", "Anne","Primary 4", "Mrs.stacy"));
+   
     
     C206_CaseStudy.userLogin();
-    
-    
-
-//    int option = 0;
-//
-//    while (option != 5) {
-//
-//      C206_CaseStudy.userLogin();
-//      option = Helper.readInt("Enter an option > ");
-//      
-//      
-// 
-//      if (option == 1) {
-//        // View all items
-//        C206_CaseStudy.viewCCADetails(CCADetailsList);
-//        C206_CaseStudy.viewCCACategory(CCACatList);
-//        C206_CaseStudy.viewParent(ParentList);
-//        C206_CaseStudy.viewStudent(StudentList);
-//
-//
-//      } else if (option == 2) {
-//        // Add a new item
-//        C206_CaseStudy.setHeader("ADD RECORDS");      
-//        System.out.println("1. CCA Details");
-//        System.out.println("2. CCA Category");
-//        System.out.println("3. Parent");
-//        System.out.println("4. Student");
-//        
-//        int itemType = Helper.readInt("Enter option to select item type > ");
-//
-//        if (itemType == 1) {
-//          // ============================ ADD CCADETAILS ==================================
-//        	CCADetails ccaCategory = addCCADetails();
-//        	C206_CaseStudy.addCCADetails(CCADetailsList,ccaCategory);
-//
-//        } else if (itemType == 2) {
-//        	// ============================ ADD CCACATEGORY ==================================
-//        	CCACategory ccaCategory  = addCCACategory();
-//        	C206_CaseStudy.addCCACategory(CCACatList, ccaCategory);
-//
-//        } else if (itemType == 3) {
-//        	// ============================ ADD PARENT ==================================
-//        	 Parent parentDetails = addParentDetails();
-//             C206_CaseStudy.addParentDetails(ParentList, parentDetails);
-//        }else if (itemType == 4) {
-//        	// ============================ ADD STUDENT ==================================
-//        	 Student StudentDetails = addStudentDetails();
-//             C206_CaseStudy.addStudentDetails(StudentList, StudentDetails);
-//        }
-//        
-//        else {
-//          System.out.println("Invalid type");
-//        }
-//
-//      } else if (option == 3) {
-//        // Loan item
-//        C206_CaseStudy.setHeader("LOAN");      
-//        C206_CaseStudy.setHeader("ITEM TYPES");
-//        System.out.println("1. Camcorder");
-//        System.out.println("2. Chromebook");
-//        
-//        int itemType = Helper.readInt("Enter option to select item type > ");
-//
-//        if (itemType == 1) {
-//          // Loan camcorder
-//          C206_CaseStudy.loanCamcorder(camcorderList);
-//        } else if (itemType == 2) {
-//          // Loan Chromebook
-//          C206_CaseStudy.loanChromebook(chromebookList);
-//        } else {
-//          System.out.println("Invalid type");
-//        }
-//
-//      } else if (option == 4) {
-//        // Return item
-//        C206_CaseStudy.setHeader("RETURN");        
-//        C206_CaseStudy.setHeader("ITEM TYPES");
-//        System.out.println("1. Camcorder");
-//        System.out.println("2. Chromebook");
-//        
-//        int itemType = Helper.readInt("Enter option to select item type > ");
-//        if (itemType == 1) {
-//          // Return camcorder
-//          C206_CaseStudy.returnCamcorder(camcorderList);
-//        } else if (itemType == 2) {
-//          // Return Chromebook
-//          C206_CaseStudy.returnChromebook(chromebookList);
-//        } else {
-//          System.out.println("Invalid type");
-//        }
-//
-//      } else if (option == 5) {
-//        System.out.println("Bye!");
-//      } else {
-//        System.out.println("Invalid option");
-//      }
-
-//    }
-    
-    
-
   }
+  
+	public static void validLogin() {
 
-  public static void userLogin() {
-    C206_CaseStudy.setHeader("LOGIN PAGE");
-    String login = ("Enter your email or id");
-    Helper.line(80, "-");
-    
-    if(login.contains("staff@gmail.com")) {
-    	int option = 0;   
-    	C206_CaseStudy.staffMenu();
-    	option =Helper.readInt("Enter your option");
-    	
-      while (option!= 11) {
-    	  
-      if(option == 1) {
-    	  C206_CaseStudy.addCCADetails();
-      }
-      else if(option == 2) {
-    	  C206_CaseStudy.deleteccaDetails(CCADetails [] detailsList);
-      }else if(option == 3) {
-    	  C206_CaseStudy.addCCACategory();
-      }else if (option == 4) {
-    	  C206_CaseStudy.deleteccaCategory(categoryList);
-      }else if(option == 5) {
-    	  C206_CaseStudy.addParentDetails();
-      }else if (option == 6) {
-    	  C206_CaseStudy.deleteParent(ParentList);
-      }else if(option == 7) {
-    	  C206_CaseStudy.viewParent(ParentList);
-      }else if(option == 8) {
-    	  C206_CaseStudy.addStudentDetails()
-      }else if(option == 9) {
-    	  C206_CaseStudy.deleteStudent(StudentList);
-      }else if(option == 10) {
-    	  C206_CaseStudy.viewStudent(StudentList);
-      } 
-      }
-    }
-    else if (len(login) ==5){
-    	
-    }
-    else {
-    	
-    
-    }
-}
+		Helper.line(60, "=");
+		System.out.println("LOGIN PORTAL");
+		Helper.line(60, "=");
+		String login = ("Enter your email or id");
+
+
+		while (isValidLogin(login) == false) { 
+			System.out.println("\nInvalid login details entered");
+			login = ("Enter your email or id");
+		}
+		System.out.println("Login succesful!"); 
+	}
+
+	public static boolean isValidLogin(String login) {
+
+		if (login.contains("@staffgmail.com")) {
+			return true;
+
+		} else if (login.contains("@gmail.com")) {
+			return true;
+		} else if (login.length() == 4) {
+			return true;
+
+		} else {
+			return false;
+		}
+
+	}
+
+	public static void userLogin() {
+		C206_CaseStudy.setHeader("LOGIN PAGE");
+		String login = ("Enter your email or id");
+		Helper.line(80, "-");
+
+		if (login.contains("staff@gmail.com")) {
+			int option = 0;
+			C206_CaseStudy.staffMenu();
+			option = Helper.readInt("Enter your option");
+
+			if (option == 1) {
+				C206_CaseStudy.addCCADetails();
+			} else if (option == 2) {
+				C206_CaseStudy.deleteccaCategory(categoryList);
+				;
+			} else if (option == 3) {
+				C206_CaseStudy.addCCACategory();
+			} else if (option == 4) {
+				C206_CaseStudy.deleteccaCategory(categoryList);
+			} else if (option == 5) {
+				C206_CaseStudy.addParentDetails();
+			} else if (option == 6) {
+				C206_CaseStudy.deleteParent(ParentList);
+			} else if (option == 7) {
+				C206_CaseStudy.viewParent(ParentList);
+			} else if (option == 8) {
+				C206_CaseStudy.addStudentRegisteredDetails();
+			} else if (option == 9) {
+				C206_CaseStudy.deleteStudent(StudentList);
+			} else if (option == 10) {
+				C206_CaseStudy.viewStudent(StudentList);
+
+			} else if (option == 11) {
+				C206_CaseStudy.viewRegisteredParticipant(RegisterList);
+			}
+
+			else if (login.contains("@gmail.com")) {
+				C206_CaseStudy.parentMenu();
+			}
+
+			if (option == 1) {
+				C206_CaseStudy.viewCCACategory(CCACatList);
+			} else if (option == 2) {
+				C206_CaseStudy.viewCCADetails(CCADetailsList);
+			} else if (option == 3) {
+				C206_CaseStudy.addStudentRegisteredDetails();
+			}
+
+			else if (login.length() == 4) {
+				C206_CaseStudy.studentMenu();
+				if (option == 1) {
+					C206_CaseStudy.viewCCACategory(CCACatList);
+				} else if (option == 2) {
+					C206_CaseStudy.viewCCADetails(CCADetailsList);
+				} else if (option == 3) {
+					C206_CaseStudy.addStudentRegisteredDetails();
+				}
+
+			} else {
+				System.out.println("Invalid ID");
+			}
+		}
+	}
  public static void staffMenu() {
      C206_CaseStudy.setHeader("Staff Optiion");      
      System.out.println("1. Add CCA Details");
@@ -196,21 +142,26 @@ public class C206_CaseStudy {
      System.out.println("8. Add Student");
      System.out.println("9. Delete Student");
      System.out.println("10. View Student");
+     System.out.println("11. View Registered Applicant");
+ } 
+ 
+ public static void parentMenu() {
+	 C206_CaseStudy.setHeader("Parent Option");
+	 System.out.println("1. View CCA Category");
+	 System.out.println("2. View CCA Details");
+	 System.out.println("3. Student Registration");
+	 
+ } 
+ 
+ 
+ public static void studentMenu() {
+	 C206_CaseStudy.setHeader("Student Option");
+	 System.out.println("1. View CCA Category");
+	 System.out.println("2. View CCA Details");
+	 System.out.println("3. Student Registration");
+	 
  }
-private static int len(String login) {
-	// TODO Auto-generated method stub
-	return 0;
-}
 
-//  public static void userLogin() {
-//	    C206_CaseStudy.setHeader("LOGIN PAGE");
-//	    System.out.println("1. Parent");
-//	    System.out.println("2. Student");
-//	    System.out.println("3. Staff");
-//	    System.out.println("4. Return item");
-//	    System.out.println("5. Quit");
-//	    Helper.line(80, "-");
-//	}
   public static void setHeader(String header) {
 		Helper.line(80, "-");
 		System.out.println(header);
@@ -231,7 +182,7 @@ private static int len(String login) {
 		// write your code here
 		for (int i = 0; i < CCADetailsList.size(); i++) {
 
-			output += String.format("%-10s %-15s %-8s %-5s %-8 %-10 %-15s\n", CCADetailsList.get(i).getTitle(),
+			output += String.format("%-10s %-15s %-8s %-5s %-8s %-10s %-15s\n", CCADetailsList.get(i).getTitle(),
 					CCADetailsList.get(i).getDescription(), CCADetailsList.get(i).getSize(),
 					CCADetailsList.get(i).getDay(), CCADetailsList.get(i).getTime(), CCADetailsList.get(i).getVenue(),
 					CCADetailsList.get(i).getICname());
@@ -299,7 +250,7 @@ private static int len(String login) {
 			  String description = Helper.readString("Enter description > ");
 			  int size = Helper.readInt("Enter size > ");
 			  String day = Helper.readString("Enter CCA day > ");
-			  int time = Helper.readInt("Enter CCA time > ");
+			  String time = Helper.readString("Enter CCA time > ");
 			  String venue = Helper.readString("Enter CCA venue > ");
 			  String ICname = Helper.readString("Enter CCA In-Charge name > ");
 			
@@ -350,17 +301,21 @@ private static int len(String login) {
 				  ParentList.add(parentDetails);
 				  System.out.println("Parent Details Added");
 			  }
-			  // ========================================== ADD STUDENT=========================================
-			  public static Student addStudentDetails() {
+			  // ========================================== ADD STUDENT TO CCA =========================================
+			  public static Student addStudentRegisteredDetails() {
 					
 				  String studID = Helper.readString("Enter Student ID > ");
 				  String studName = Helper.readString("Enter student name > ");
 				  String lvlClass = Helper.readString("Enter student level > ");
 				  String teacher = Helper.readString("Enter student teacher > ");
+				  String CCACategory = Helper.readString("Enter CCA Category > ");
+				  String CCAName = Helper.readString("Enter CCA Name > ");
+				  
+				  
 
-				  Student StudentDetails = new Student(studID, studName, lvlClass,teacher );
+				  Student StudentDetails = new Student(studID, studName, lvlClass,teacher,CCACategory,CCAName);
 				  return StudentDetails;
-
+	
 			  }
 
 			  public static void addStudentDetails(ArrayList<Student> StudentList, Student StudentDetails) {
@@ -368,7 +323,7 @@ private static int len(String login) {
 				  StudentList.add(StudentDetails);
 				  System.out.println("Student Details Added");
 			  }
-			  
+			 
 			  // =================================== DELETE STUDENT ======================================
 			  public static void deleteStudent(Student[] StudentList) {
 
@@ -421,21 +376,6 @@ private static int len(String login) {
 				      System.out.println("Invalid detail index");
 				    }
 				  }
-			  ///
-			  public static void deleteccaDetails(CCADetails[]detailsList) {
-
-				   	C206_CaseStudy.deleteccaDetails(detailsList);
-
-				    int deleteccaDetails= Helper.readInt("Enter cca detail to delete > ");
-				    if (deleteccaDetails > 0 && deleteccaDetails <= detailsList.length && detailsList[deleteccaDetails] != null) {
-				      detailsList[deleteccaDetails] = null;
-				      System.out.println("detail deleted!");
-				    } else {
-				      System.out.println("Invalid detail index");
-				    }
-				  }
-		
-
 
 	}
 		  

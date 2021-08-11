@@ -4,13 +4,20 @@ public class Student {
 	private String name;
 	private String lvlclass;
 	private String teacher;
+	private String CCACategory;
+	private String CCCName;
+
 	
-	public Student(String studentID, String name, String lvlclass, String teacher) {
+
+
+	public Student(String studentID, String name, String lvlclass, String teacher, String cCACategory, String cCCName) {
 		super();
 		StudentID = studentID;
 		this.name = name;
 		this.lvlclass = lvlclass;
 		this.teacher = teacher;
+		CCACategory = cCACategory;
+		CCCName = cCCName;
 	}
 
 	public String getStudentID() {
@@ -43,6 +50,22 @@ public class Student {
 
 	public void setTeacher(String teacher) {
 		this.teacher = teacher;
+	}
+
+	public String getCCACategory() {
+		return CCACategory;
+	}
+
+	public void setCCACategory(String cCACategory) {
+		CCACategory = cCACategory;
+	}
+
+	public String getCCCName() {
+		return CCCName;
+	}
+
+	public void setCCCName(String cCCName) {
+		CCCName = cCCName;
 	}
 	
 	
