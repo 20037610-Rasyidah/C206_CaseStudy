@@ -1,40 +1,28 @@
 
 public class Parent extends Student {
-	private String name;
-	private String email;
-	private int ContactNum;
 	
-	public Parent(String studentID, String name, String lvlclass, String teacher, String name2, String email,
-			int contactNum) {
-		super(studentID, name, lvlclass, teacher);
-		name = name2;
+	String name;
+	private String email;
+	private int contactNum;
+	
+	public Parent(String name, String email, int contactNum, int StudentID, String StudentName, String Studentclass, String CCACategory, String CCAName, String teacher) {
+		
+		super(StudentID, StudentName, Studentclass, CCACategory, CCAName, teacher);
+		this.name = name;
 		this.email = email;
-		ContactNum = contactNum;
+		this.contactNum = contactNum;
 	}
-
-	public String getName() {
+	
+	public String getname() {
 		return name;
 	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getEmail() {
+	
+	public String getemail() {
 		return email;
 	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public int getContactNum() {
-		return ContactNum;
-	}
-
-	public void setContactNum(int contactNum) {
-		ContactNum = contactNum;
-	}
 	
-	
+	public int getcontactNum() {
+		return contactNum;
+	}
 }
+	

@@ -1,75 +1,44 @@
-
 public class Student {
-	private String StudentID;
-	private String name;
-	private String lvlclass;
-	private String teacher;
+	private int StudentID;
+	private String StudentName;
+	private String Studentclass;
 	private String CCACategory;
-	private String CCCName;
+	private String CCAName;
+	private String teacher;
 
+	public Student(int StudentID, String StudentName, String Studentclass, String CCACategory, String CCAName, String teacher) {
+  
+    this.StudentID = StudentID;
+    this.StudentName = StudentName;
+    this.Studentclass = Studentclass;
+    this.CCACategory = CCACategory;
+    this.CCAName = CCAName;
+    this.teacher = teacher;
+  }
 	
-
-
-	public Student(String studentID, String name, String lvlclass, String teacher, String cCACategory, String cCCName) {
-		super();
-		StudentID = studentID;
-		this.name = name;
-		this.lvlclass = lvlclass;
-		this.teacher = teacher;
-		CCACategory = cCACategory;
-		CCCName = cCCName;
-	}
-
-	public String getStudentID() {
+	public int getStudId() {
 		return StudentID;
 	}
-
-	public void setStudentID(String studentID) {
-		StudentID = studentID;
+	
+	public String getStudName() {
+		return StudentName;
 	}
-
-	public String getName() {
-		return name;
+	
+	public String getStudClass() {
+		return Studentclass;
 	}
-
-	public void setName(String name) {
-		this.name = name;
+	
+	public String getCCACategory() {
+		return CCACategory;
 	}
-
-	public String getLvlclass() {
-		return lvlclass;
-	}
-
-	public void setLvlclass(String lvlclass) {
-		this.lvlclass = lvlclass;
+	
+	public String getCCAname() {
+		return CCAName;
 	}
 
 	public String getTeacher() {
 		return teacher;
 	}
-
-	public void setTeacher(String teacher) {
-		this.teacher = teacher;
-	}
-
-	public String getCCACategory() {
-		return CCACategory;
-	}
-
-	public void setCCACategory(String cCACategory) {
-		CCACategory = cCACategory;
-	}
-
-	public String getCCCName() {
-		return CCCName;
-	}
-
-	public void setCCCName(String cCCName) {
-		CCCName = cCCName;
-	}
-	
-	
-	
-	
-	
 }
+
+ 

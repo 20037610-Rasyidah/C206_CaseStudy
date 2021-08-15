@@ -4,7 +4,7 @@ public class CCACategory{
 
 	public CCACategory(String cCAname) {
 		super();
-		CCAname = cCAname;
+		CCAname = CCAname;
 	}
 
 	public String getCCAname() {
